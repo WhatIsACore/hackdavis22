@@ -83,14 +83,16 @@ div {
   color: #fff;
   font-weight: 600;
 }
-
+#urtask{
+  font-size:15px;
+}
 .main-content {
   width: 100vw;
   padding: 25px;
   display: flex;
   flex-direction: row;
   position: relative;
-  top: 120px;
+  top: 7px;
 }
 .main-content .left {
   flex-grow: 1;
