@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "DM Sans";
+  src: url("fonts/DMSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("fonts/DMSans-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("fonts/DMSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("fonts/DMSans-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("fonts/DMSans-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("fonts/DMSans-BoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  font-family: 'DM Sans';
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.fa {
+  color: #fff;
+  font-size: 20px;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  padding: 25px;
+  flex-direction: row;
+  color: #fff;
+  text-align: right;
+  font-size: 18px;
+}
+
+.navbar .left {
+  flex-grow: 1;
+}
+
+.navbar .right {
+  margin-left: 50px;
+}
+
+.navbar .fa {
+  margin: 0 10px;
+}
+
+.title {
+  width: 100vw;
+  padding-left: 25px;
+  position: relative;
+  top: 100px;
+  font-size: 32px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.main-content {
+  width: 100vw;
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 120px;
+}
+.main-content .left {
+  flex-grow: 1;
+  margin-right: 25px;
+}
+.main-content .right {
+  flex-grow: 1;
+}

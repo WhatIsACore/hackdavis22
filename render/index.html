@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel='stylesheet' type="text/css" href='../node_modules/@fortawesome/fontawesome-free/css/all.css'>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <title>MOM</title>
+  </head>
+  <body>
+
+    <div class='navbar'>
+      <div class='left'>
+        <i class="fa fa-house"></i>
+        <i class="fa fa-calendar"></i>
+        <i class="fa fa-user-group"></i>
+      </div>
+      <div class='right'>
+        <i class="fa fa-bell"></i>
+        <i class="fa fa-user"></i>
+      </div>
+    </div>
+
+    <div class='title'>
+      Welcome, Amy
+    </div>
+
+    <div class='main-content'>
+      <div class='left'>
+        left
+      </div>
+      <div class='right'>
+        right
+      </div>
+    </div>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>
