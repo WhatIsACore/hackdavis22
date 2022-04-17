@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "DM Sans";
+  src: url("fonts/DMSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("fonts/DMSans-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("fonts/DMSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("fonts/DMSans-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("fonts/DMSans-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("fonts/DMSans-BoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+:root{
+  --highlight: #64A9A5;
+  --primary: #161622;
+  --secondary: #232336;
+  --action: #EB8528;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary);
+  font-family: 'DM Sans';
+}
+div, input {
+  box-sizing: border-box;
+}
+input {
+  background-color: var(--secondary);
+  border-radius: 20px;
+  border: none;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.fa {
+  color: #fff;
+  font-size: 20px;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  padding: 25px 50px;
+  background-color: var(--primary);
+  flex-direction: row;
+  color: #fff;
+  text-align: right;
+  font-size: 18px;
+  z-index: 10;
+  border-bottom: 1px solid var(--secondary);
+}
+
+.navbar .left {
+  flex-grow: 1;
+}
+
+.navbar .right {
+  margin-left: 50px;
+}
+
+.navbar .fa {
+  margin: 0 10px;
+}
+
+.main-title {
+  width: 100vw;
+  padding-left: 50px;
+  position: relative;
+  top: 120px;
+  font-size: 32px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.main-content {
+  width: 100vw;
+  padding: 125px 50px 25px 50px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 27px;
+}
+.main-content .left {
+  flex-grow: 1;
+  margin-right: 50px;
+  width:0;
+}
+.main-content .right {
+  flex-grow: 1;
+  width:0;
+}

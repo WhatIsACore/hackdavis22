@@ -1,0 +1,48 @@
+.main-title {
+  text-align: center;
+  padding: 0;
+}
+
+.calendar {
+  width: 100%;
+  background-color: var(--secondary);
+  padding: 25px;
+  border-radius: 25px;
+}
+
+.calendar .title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.calendar .labels {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+}
+.calendar .labels .label {
+  width: 40px;
+  flex-grow: 1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.calendar .date-table {
+  display: flex;
+  flex-direction: column;
+}
+.calendar .date-table .row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+.calendar .date-table .row .day {
+  width: 40px;
+  height: 20px;
+  flex-grow: 1;
+  text-align: center;
+  color: #C3C4DE;
+}
+.calendar .date-table .row .day.darkened {
+  opacity: 0.5;
+}
