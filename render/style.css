@@ -83,9 +83,7 @@ div {
   color: #fff;
   font-weight: 600;
 }
-#urtask{
-  font-size:15px;
-}
+
 .main-content {
   width: 100vw;
   padding: 25px;
@@ -100,4 +98,21 @@ div {
 }
 .main-content .right {
   flex-grow: 1;
+}
+
+#tasks {
+  font-size:15px;
+  margin-top: 100px;
+}
+.task-title {
+  display: inline-block;
+  background-color: #64A9A5;
+  border-radius: 20px 20px 0 0;
+  color: #fff;
+  padding: 10px 30px 10px;
+}
+.task-body {
+  height: 400px;
+  background-color: #232336;
+  border-radius: 0 20px 20px 20px;
 }

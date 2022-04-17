@@ -1,3 +1,6 @@
+const Store = require('electron-store');
+
+const store = new Store();
 
 window.addEventListener('DOMContentLoaded', () => {
   const replaceText = (selector, text) => {
