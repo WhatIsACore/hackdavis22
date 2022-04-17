@@ -36,17 +36,28 @@
 }
 :root{
   --highlight: #64A9A5;
+  --primary: #161622;
   --secondary: #232336;
+  --action: #EB8528;
+
 }
 body {
   margin: 0;
   padding: 0;
-  background-color: #111;
+  background-color: var(--primary);
   font-family: 'DM Sans';
 }
 
-div {
+div, input {
   box-sizing: border-box;
+}
+input {
+  background-color: var(--secondary);
+  border-radius: 20px;
+  border: none;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  color: #fff;
 }
 
 .fa {
@@ -58,11 +69,14 @@ div {
   position: fixed;
   display: flex;
   width: 100vw;
-  padding: 25px;
+  padding: 25px 50px;
+  background-color: var(--primary);
   flex-direction: row;
   color: #fff;
   text-align: right;
   font-size: 18px;
+  z-index: 10;
+  border-bottom: 1px solid var(--secondary);
 }
 
 .navbar .left {
@@ -77,11 +91,11 @@ div {
   margin: 0 10px;
 }
 
-.title {
+.main-title {
   width: 100vw;
-  padding-left: 25px;
+  padding-left: 50px;
   position: relative;
-  top: 100px;
+  top: 120px;
   font-size: 32px;
   color: #fff;
   font-weight: 600;
@@ -89,15 +103,15 @@ div {
 
 .main-content {
   width: 100vw;
-  padding: 25px;
+  padding: 25px 50px;
   display: flex;
   flex-direction: row;
   position: relative;
-  top: 7px;
+  top: 27px;
 }
 .main-content .left {
   flex-grow: 1;
-  margin-right: 25px;
+  margin-right: 50px;
   width:0;
 }
 .main-content .right {
@@ -105,35 +119,74 @@ div {
   width:0;
 }
 
-#tasks {
-  font-size:15px;
+.main-block {
   margin-top:100px;
 }
-.task-title {
+.main-block .title {
   display: inline-block;
   background-color: var(--highlight);
   border-radius: 20px 20px 0 0;
   color: #fff;
-  padding: 10px 30px 10px 10px;
+  padding: 10px 30px 5px 20px;
+  font-size: 16px;
 }
-.task-body {
+.main-block .body {
   height: 300px;
   background-color: var(--secondary);
   border-radius: 0 20px 20px 20px;
-  //width:379.5px;
 }
-#addtask{
+
+.sub-block {
   margin-top: 35px;
 }
-.addtask-title{
+.sub-block .title {
   color: #fff;
   padding: 10px 30px 10px 10px;
   font-size:15px;
 }
-.addtask-body {
+.sub-block .body {
+  height: 160px;
   background-color: var(--secondary);
-  border-radius: 20px 20px 20px 20px;
-  border:none;
-  padding: 10px 5px 5px 10px;
-  width:379.5px;
+  border-radius: 20px;
+}
+#addtask .name-input {
+  width: 100%;
+}
+#addtask .subtitle {
+  color: #fff;
+  font-size: 12px;
+  margin-left: 10px;
+  opacity: 0.7;
+}
+#addtask .group {
+  display: flex;
+  flex-direction: row;
+}
+#addtask .group .input-pair {
+  flex-grow: 2;
+}
+#addtask .group .input-pair .label {
+  color: #fff;
+  font-size: 12px;
+  margin: 10px;
+  height: 15px;
+  opacity: 0.7;
+}
+#addtask .group .input-pair input {
+  width: calc(100% - 10px);
+}
+#addtask .save-wrapper {
+  flex-grow: 1;
+  min-width: 80px;
+  padding-top: 38px;
+  margin-left: 10px;
+}
+#addtask .save-wrapper .savebtn {
+  background-color: var(--action);
+  border-radius: 20px;
+  border: none;
+  padding: 4px 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
 }
