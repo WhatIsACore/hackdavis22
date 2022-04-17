@@ -14,6 +14,8 @@
   text-align: center;
   color: #fff;
   margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .calendar .labels {
@@ -34,13 +36,14 @@
 .calendar .date-table .row {
   display: flex;
   flex-direction: row;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .calendar .date-table .row .day {
   width: 40px;
   height: 20px;
   flex-grow: 1;
   text-align: center;
+  font-size: 15px;
   color: #C3C4DE;
 }
 .calendar .date-table .row .day.darkened {
